@@ -1,0 +1,15 @@
+# Exercise 3.1 Rewrite your pay computation to give the employee 1.5 times the
+# hourly rate for hours worked above 40 hours.
+# Enter Hours: 45
+# Enter Rate: 10
+# Pay: 475.0
+
+Hours = int(raw_input('Hours: '))
+
+Rate = 10
+if Hours < 40:
+	print Hours * Rate
+elif Hours == 40:
+	print Hours * Rate
+elif Hours > 40:
+	print 40 * Rate + (Hours - 40) * Rate * 1.5
