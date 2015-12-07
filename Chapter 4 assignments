@@ -1,0 +1,20 @@
+## Exercise 4.6 Rewrite your pay computation with time-and-a-half for overtime
+## and create a function called computepay which takes two parameters (hours and
+## rate).
+## Enter Hours: 45
+## Enter Rate: 10
+## Pay: 475.0
+
+def computepay(hours,rate):
+    if float(hours) <= 40:
+        final = float(hours) * rate
+        print "Enter Hours: ", float(hours)
+        print "Enter Rate: ", float(rate)
+        print "Pay: ", final
+    elif float(hours) > 40:
+        final = 40 * rate + rate * 1.5 * (float(hours)-40)
+        print "Enter Hours: ", float(hours)
+        print "Enter Rate: ", float(rate)
+        print "Pay: ", final
+
+computepay(45,10)
